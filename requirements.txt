@@ -1,0 +1,113 @@
+Perfect — below is a **READY-TO-PASTE Requirements section** you can drop **directly into your `README.md`**.
+No edits needed. This is **clean, professional, and recruiter-friendly**.
+
+---
+
+## 🔧 Requirements
+
+### System Requirements
+
+* **Operating System:** macOS, Linux, or Windows
+* **Python Version:** Python **3.9 or higher** (recommended: Python 3.10+)
+* **Memory:** Minimum 4 GB RAM (8 GB recommended for smooth notebook execution)
+
+---
+
+### Python Dependencies
+
+Install all required Python packages using:
+
+```bash
+pip install -r requirements.txt
+```
+
+**Required libraries:**
+
+* `jupyterlab` – run and manage Jupyter notebooks
+* `numpy` – numerical and matrix operations
+* `pandas` – data loading, cleaning, and transformation
+* `matplotlib` – histograms and box-plot visualizations
+* `biopython` – FASTA parsing, sequence handling, BLAST XML parsing
+
+---
+
+### External Tools (Required for BLAST Notebook Only)
+
+One notebook uses **NCBI BLAST+** for local protein alignment.
+
+**Required executables:**
+
+* `makeblastdb`
+* `blastp`
+
+**Installation**
+
+macOS (Homebrew):
+
+```bash
+brew install blast
+```
+
+Ubuntu / Debian:
+
+```bash
+sudo apt-get update
+sudo apt-get install ncbi-blast+
+```
+
+Windows:
+
+* Download BLAST+ from NCBI
+* Add the BLAST `bin` directory to your system `PATH`
+
+**Verify installation:**
+
+```bash
+makeblastdb -version
+blastp -version
+```
+
+> Note: If BLAST+ is not installed, only the BLAST notebook will fail. All other notebooks will run normally.
+
+---
+
+### Recommended Environment (Optional but Preferred)
+
+For a fully reproducible bioinformatics environment, a Conda setup is recommended:
+
+```bash
+conda env create -f environment.yml
+conda activate bioinformatics-env
+```
+
+---
+
+### Input Data Expectations
+
+Notebooks expect standard bioinformatics file formats:
+
+* DNA sequence strings
+* FASTA files (`.fasta`, `.fa`, `.txt`)
+* Gene expression matrices (`.txt`, `.tsv`, `.csv`)
+* Genome annotation files (`.gff`, `.gff3`)
+* BLAST output files (`.xml`)
+
+Place all input files inside the `data/` directory and update file paths in notebooks accordingly.
+
+---
+
+### Output Files
+
+Generated plots, tables, and intermediate results are saved in the `outputs/` directory.
+
+---
+
+### Quick Start
+
+```bash
+pip install -r requirements.txt
+jupyter lab
+```
+
+Open py.notebooks from the `scripts/` folder and run sequentially.
+
