@@ -1,0 +1,22 @@
+{
+  "version": "1.2",
+  "dbname": "RAD21_Search_Database",
+  "dbtype": "Protein",
+  "db-version": 5,
+  "description": "/Users/mohanavenkataphaneendrareddyalla/Downloads/RAD21_Protein_Sequences.fasta",
+  "number-of-letters": 4830,
+  "number-of-sequences": 8,
+  "last-updated": "2024-11-18T01:48:00",
+  "number-of-volumes": 1,
+  "bytes-total": 154792,
+  "bytes-to-cache": 5079,
+  "files": [
+    "RAD21_Search_Database.pdb",
+    "RAD21_Search_Database.phr",
+    "RAD21_Search_Database.pin",
+    "RAD21_Search_Database.pot",
+    "RAD21_Search_Database.psq",
+    "RAD21_Search_Database.ptf",
+    "RAD21_Search_Database.pto"
+  ]
+}
